@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/features/landing_page/landing_page.dart';
+import 'package:shop/foundation/Splash_screen.dart';
 import 'package:shop/theme/colors.dart';
+
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
-    return   GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "E-COMMERCE",
       theme: ThemeData(
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
           headline6: TextStyle(
             fontSize: 14.5,
             letterSpacing: 0.15,
-          color: AppColor.heading6
+            color: AppColor.heading6,
           ),
           bodyText1: TextStyle(
             color: AppColor.bodyColor1,
@@ -28,12 +30,11 @@ class MyApp extends StatelessWidget {
           ),
           caption: TextStyle(
             fontSize: 11,
-            color: AppColor.captionColor
+            color: AppColor.captionColor,
           ),
         ),
       ),
-      home: Landing_Page(),
+      home: SplashScreen(), 
     );
   }
-
 }

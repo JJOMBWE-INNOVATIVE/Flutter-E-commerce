@@ -29,8 +29,19 @@ environment:
 # versions available, run `flutter pub outdated`.
 flutter_native_splash:
   image: assets/images/logo-big.png
-  color: "FFFFFF"
+  color: "#ffffff"
+  android: true
+  ios: true
 
+
+flutter_icons:
+  image_path: assets/images/logo-big.png
+  android:
+    adaptive_icon_foreground:
+      mipmap_xxhdpi: mipmap-xxhdpi/ic_launcher_foreground.xml
+  ios:
+    adaptive_icons:
+      asset_name: ic_launcher
 
 
 
@@ -38,6 +49,8 @@ dependencies:
   flutter:
     sdk: flutter
   cached_network_image: ^3.3.0
+  flutter_launcher_icons: ^0.13.1
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -46,6 +59,7 @@ dependencies:
   flutter_native_splash: ^2.3.3
   http: ^1.1.0
   flutter_secure_storage: ^9.0.0
+
 
 dev_dependencies:
   flutter_test:
