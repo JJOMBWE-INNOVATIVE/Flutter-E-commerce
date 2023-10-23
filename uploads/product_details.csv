@@ -1,16 +1,16 @@
-﻿name,desc,wishlisted,actual_price,discounted_price,discount,category,sub_category,type,genre,brand,image_url,rating
-T shirtX,This is a tshirt,FALSE,400,200,50,Men,Topwear,tshirt,new,Adidas,1,
-ShirtX,This is a shirt,FALSE,400,200,50,Women,Topwear,shirt,classic,Rebook,2,
-ShirtsX,This is a shirt,FALSE,10000,5000,50,Women,Topwear,shirt,New,Rebook,3,
-ShirtsX,This is a shirt,FALSE,600,300,50,Women,Topwear,shirt,Classic,Rebook,4,
-ShirtsX,This is a shirt,FALSE,800,400,50,Women,Topwear,shirt,New,Rebook,5,
-ShirtsX,This is a shirt,FALSE,10,5,50,Women,Topwear,shirt,New,Rebook,6,
-T shirtX,This is a tshirt,FALSE,100000,50000,50,Women,Topwear,shirt,New,Rebook,7,
-T shirtX,This is a tshirt,FALSE,14000,7000,50,Women,Topwear,shirt,New,Rebook,8,
-T shirtX,This is a tshirt,FALSE,6000,3000,50,Men,Topwear,shirt,New,Rebook,8,
-T shirtX,This is a tshirt,FALSE,100,50,50,Men,Topwear,shirt,New,Rebook,10,
-T shirtX,This is a tshirt,FALSE,4000,2000,50,Men,Topwear,shirt,New,Rebook,11,
-ShirtsX,This is a shirt,FALSE,200,100,50,Men,Topwear,shirt,New,Rebook,12,
-T shirtX,This is a tshirt,FALSE,2000,1000,50,Men,Topwear,shirt,New,Rebook,13,
-T shirtX,This is a tshirt,FALSE,50,25,50,Men,Topwear,shirt,New,Rebook,14,
-T shirtX,This is a tshirt,FALSE,5000,2500,50,Men,Topwear,shirt,New,Rebook,15,
+"name,desc,wishlisted,actual_price,discounted_price,discount,category,sub_category,type,genre,brand,image_url,rating,reviews"
+"T shirtX,This is a tshirt,FALSE,400,200,50,Men,Topwear,tshirt,new,Adidas,1,								"
+"ShirtX,This is a shirt,FALSE,400,200,50,Women,Topwear,shirt,classic,Rebook,2,								"
+"ShirtsX,This is a shirt,FALSE,10000,5000,50,Women,Topwear,shirt,New,Rebook,3,								"
+"ShirtsX,This is a shirt,FALSE,600,300,50,Women,Topwear,shirt,Classic,Rebook,4,								"
+"ShirtsX,This is a shirt,FALSE,800,400,50,Women,Topwear,shirt,New,Rebook,5,								"
+"ShirtsX,This is a shirt,FALSE,10,5,50,Women,Topwear,shirt,New,Rebook,6,								"
+"T shirtX,This is a tshirt,FALSE,100000,50000,50,Women,Topwear,shirt,New,Rebook,7,								"
+"T shirtX,This is a tshirt,FALSE,14000,7000,50,Women,Topwear,shirt,New,Rebook,8,								"
+"T shirtX,This is a tshirt,FALSE,6000,3000,50,Men,Topwear,shirt,New,Rebook,8,								"
+"T shirtX,This is a tshirt,FALSE,100,50,50,Men,Topwear,shirt,New,Rebook,10,								"
+"T shirtX,This is a tshirt,FALSE,4000,2000,50,Men,Topwear,shirt,New,Rebook,11,								"
+"ShirtsX,This is a shirt,FALSE,200,100,50,Men,Topwear,shirt,New,Rebook,12,								"
+"T shirtX,This is a tshirt,FALSE,2000,1000,50,Men,Topwear,shirt,New,Rebook,13,								"
+"T shirtX,This is a tshirt,FALSE,50,25,50,Men,Topwear,shirt,New,Rebook,14,								"
+"T shirtX,This is a tshirt,FALSE,5000,2500,50,Men,Topwear,shirt,New,Rebook,15,								"

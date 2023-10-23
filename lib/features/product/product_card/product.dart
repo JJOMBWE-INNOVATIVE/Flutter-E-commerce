@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:shop/features/product/controller/product_details_controller.dart';
 import 'package:shop/features/product/product_card/product_card.dart';
 
@@ -65,10 +64,13 @@ var productDetailsController = Get.put(ProductDetailsController());
       ),
       body: Obx(() =>
       productDetailsController.isLoading.value?
-      const Center(child: CircularProgressIndicator()) :ListView.builder(
+      const Center(child: CircularProgressIndicator()) :
+      ListView.builder(
         itemCount: productDetailsController.productList.length,
         itemBuilder: (contex,index){
-          return const ProductCard();
+          return Wrap(
+            children: productDetailsController.productList.map((item) => ProductCard(item: item)).toList(),          
+          );
         },
         ), 
         )   

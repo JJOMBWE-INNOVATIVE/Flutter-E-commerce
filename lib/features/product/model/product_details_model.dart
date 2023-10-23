@@ -37,6 +37,7 @@ class ProductDetailItem {
     String brand;
     String imageUrl;
     String? rating;
+    String? review;
 
 
     ProductDetailItem({
@@ -54,6 +55,7 @@ class ProductDetailItem {
         required this.brand,
         required this.imageUrl,
         this.rating,
+        this.review
     });
 
     factory ProductDetailItem.fromJson(Map<String, dynamic> json) => ProductDetailItem(
@@ -71,6 +73,7 @@ class ProductDetailItem {
         brand: json["brand"],
         imageUrl: json["image_url"],
         rating: json["rating"],
+        review: json["review"],
     );
 
     Map<String, dynamic> toJson() => {
@@ -88,5 +91,6 @@ class ProductDetailItem {
         "brand": brand,
         "image_url": imageUrl,
         "rating": rating,
+        "review":review
     };
 }

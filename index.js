@@ -17,6 +17,8 @@ app.use(express.json());
 const loginRoutes = require("./routes/login.routes");
 const userDetailsRoutes = require("./routes/user_details.routes");
 const uploadAllRoutes = require("./routes/products_details.routes");
+const categoryDetailsRoute = require("./routes/category_details.routes");
+app.use("/",categoryDetailsRoute);
 app.use("/uploads",express.static("./uploads"));
 app.use("/",loginRoutes);
 app.use("/",userDetailsRoutes);
