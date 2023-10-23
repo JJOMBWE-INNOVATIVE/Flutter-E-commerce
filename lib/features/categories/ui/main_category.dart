@@ -14,6 +14,7 @@ class MainCategoryTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return  ExpansionTile(
       collapsedBackgroundColor:Color(int.parse(mainCategory.backgroundColor)),
+      iconColor: Colors.black,
       title: Container(
         padding: const  EdgeInsets.symmetric(horizontal: 10),
         height: 130,
@@ -48,15 +49,30 @@ class MainCategoryTile extends StatelessWidget {
               style: const TextStyle(
                 fontWeight: FontWeight.w300,
                 fontSize: 15,
+                color: Colors.black
               ),
               ),
               ],
             ),
           ),
-         const SizedBox(width: 10),
-          Image.asset(
-            "assets/images/men.jpeg"
-            ),
+                  const SizedBox(width: 10),
+                  Image(
+          image: NetworkImage("http://10.0.2.2:3001/uploads/categories_images/${mainCategory.imageUrl}"),
+          width: 100,
+          loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent? loadingProgress) {
+            if (loadingProgress == null) {
+              return child;
+            }
+            return Center(
+              child: CircularProgressIndicator(
+                value: loadingProgress.expectedTotalBytes != null
+                    ? loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes!
+                    : null,
+              ),
+    );
+  },
+)
+
         ],
        ),
         ),

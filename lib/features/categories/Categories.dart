@@ -19,6 +19,37 @@ var categoryController = Get.put(CategoryController());
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Container(
+          padding:const EdgeInsets.symmetric(horizontal: 10),
+          child: const Text("Categories",
+          style:TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            color: Colors.black45
+          ),
+          ),
+          ),
+          actions: [
+              IconButton(
+                onPressed: (){}, 
+              icon:const Icon(
+                Icons.favorite_outline,
+                color: Colors.black,
+              ),
+              ),
+              IconButton(
+                onPressed: (){}, 
+              icon:const Icon(
+                Icons.shopping_bag_outlined,
+                color: Colors.black,
+              ),
+              ),
+          ],
+        centerTitle: false,   
+      ),
       backgroundColor: AppColor.scaffoldBGColor,
       body: SafeArea(child: Center(
         child: Obx(() {

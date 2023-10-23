@@ -22,7 +22,7 @@ class ProductCard extends StatelessWidget {
           child: Stack(
             children: [
             CachedNetworkImage(
-            imageUrl: "http://10.0.2.2:3001/uploads/product_images/${item.imageUrl}.png",
+            imageUrl: "http://10.0.2.2:3001/uploads/product_images/${item.imageUrl}.jpeg",
             placeholder: (context, url) => const Center(child:CircularProgressIndicator()),
             imageBuilder: (context, imageProvider) {
               print("Image successfully loaded.");
